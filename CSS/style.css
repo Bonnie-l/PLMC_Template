@@ -1,0 +1,836 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: white;
+    padding: 20px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Logo and main navigation wrapper */
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    height: 80px; /* Set a fixed height for the header */
+    overflow: hidden; /* Prevent overflow of logo */
+}
+
+/* Logo */
+.logo {
+    width: 250px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+    margin-top: -10px; /* Adjust this value to move the logo up */
+}
+
+/* Main navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #1C2541;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0066CC;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #0066CC;
+}
+
+.main-nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px 0 0 3px;
+    width: 200px;
+    font-size: 0.9rem;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    background: #5BC0BE;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Secondary navigation */
+.secondary-nav {
+    margin-bottom: 20px;
+}
+
+.secondary-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.secondary-nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 0.95rem;
+}
+
+/* Blue navigation */
+.blue-nav {
+    background: #2B3B56;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-nav h1{
+    margin-left: 15%;
+}
+
+.blue-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 15%;
+}
+
+.blue-nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.blue-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.blue-nav a:hover {
+    color: #5BC0BE;  /* Light blue color on hover */
+}
+
+.blue-nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.breadcrumb {
+    color: #666;
+    margin-left: 15%;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+/* Main content */
+.content-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+.image-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
+
+.text-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.text-content p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+.action-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #024174;
+    background-color: #f5f5f5;
+    font-size: 1.1rem;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.action-button:hover {
+    background-color: #024174;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.action-button::after {
+    content: "›";
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.action-button:hover::after {
+    transform: translateX(5px);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .content-wrapper {
+        height: auto;
+    }
+
+    .text-content {
+        position: relative;
+        padding: 20px;
+    }
+
+    .action-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-button {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+.for-patients {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.for-patients h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.service-item {
+    background: #f5f5f5;
+    padding: 20px;
+    text-decoration: none;  /* Remove underline from links */
+    color: inherit;  /* Keep original text color */
+    display: block;  /* Make it block-level for full clickable area */
+    transition: transform 0.2s, box-shadow 0.2s;  /* Smooth transition for hover effect */
+}
+
+.service-item:not(.insurance-info):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.service-item h3 {
+    margin-bottom: 15px;
+    color: #024174;
+    font-size: 1.2rem;
+}
+
+.service-item h3 a {
+    color: #024174;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.service-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Make the last row span only 2 items */
+.service-item:nth-last-child(-n+6) {
+    grid-column: span 2;
+}
+
+
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Social Connect Section */
+.social-connect {
+    background-color: #EBF8F7;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+.social-connect h2 {
+    color: #333;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #024174;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #024174;
+    color: white;
+}
+
+/* About Primary Care Section */
+.about-primary-care {
+    background-color: #EBF8F7;
+    padding: 60px 20px;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.about-content h2 {
+    color: #333;
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.underline {
+    width: 40px;
+    height: 3px;
+    background-color: #00a0dc;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1f2937;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+}
+
+.learn-more::after {
+    content: "›";
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px){
+    .social-icons {
+        flex-wrap: wrap;
+    }
+    
+    .about-content {
+        padding: 0 20px;
+    }
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #1C2541;
+    color: white;
+    padding: 60px 40px 20px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 250px 1fr 400px;
+    gap: 60px;
+}
+
+/* Add map container styles */
+.footer-map {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 60px;
+}
+
+.nav-column h3 {
+    color: #00a0dc;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.nav-column p {
+    font-size: 0.9rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.nav-column h3 a {
+    color: inherit;  /* Inherits the color from h3 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-column h3 a:hover {
+    color: #0066CC;  /* Blue color on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.bottom-links {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-links a {
+    color: #00a0dc;
+    text-decoration: none;
+}
+
+.bottom-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Info Section */
+.footer-info {
+    padding-right: 40px;
+}
+
+.footer-logo {
+    width: 180px;
+    margin-top: -60px;
+}
+
+.hospital-address {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    color: #00a0dc;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.1rem;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Top utility bar */
+.utility-bar {
+    background: #f8f9fa;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.utility-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.utility-content select,
+.utility-content button {
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    border: none;
+    background: transparent;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Add media query for responsive behavior */
+@media screen and (max-width: 1024px) { /* You can adjust this breakpoint as needed */
+    .main-nav {
+        display: none; /* Hides the navigation when window is smaller */
+    }
+}
+
+/* Optional: Add a hamburger menu for smaller screens */
+.menu-toggle {
+    display: none; /* Hidden by default on large screens */
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-toggle {
+        display: block; /* Shows hamburger menu on smaller screens */
+    }
+}
+
+/* Menu toggle button */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+/* Main navigation default styles */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 1024px) {
+    .menu-toggle {
+        display: block; /* Show the hamburger menu */
+    }
+
+    .main-nav {
+        display: none; /* Hide by default on mobile */
+        position: fixed; /* Changed to fixed */
+        top: 80px; /* Adjust based on your header height */
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .main-nav.show {
+        display: flex !important; /* Show when toggled */
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .main-nav ul li {
+        width: 100%;
+    }
+
+    .main-nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .search-container input {
+        width: calc(100% - 50px); /* Account for button width */
+    }
+}
+
+/* Create a container for the three sections */
+.bottom-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 60px 10% 0 10%;
+}
+
+/* Adjust the existing sections */
+.social-connect, .about-primary-care {
+    margin: 0;
+    height: 100%;
+}
+
+
+/* Adjust responsive styles */
+@media screen and (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-map {
+        min-height: 250px;
+    }
+}
+
+/* Insurance Information Styles */
+.insurance-info .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #024174;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    padding-top: 15px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content ul {
+    list-style: none;
+}
+
+.dropdown-content li {
+    padding: 8px 0;
+    color: #666;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+/* When active, rotate the button */
+.toggle-btn.active {
+    transform: rotate(45deg);
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #024174;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;  /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top-btn:hover {
+    background-color: #02315a;
+    transform: translateY(-3px);
+}
+
+.back-to-top-btn.show {
+    display: flex;
+}
+

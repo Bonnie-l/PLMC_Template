@@ -1,0 +1,306 @@
+<!--Bonnie-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website Theme5</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="utility-bar">
+        <div class="utility-content">
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="Images/PLMC2.png" alt="PLMC-logo" class="logo">
+            </a>
+            
+            <!-- Hamburger menu for mobile -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Main navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="SidePage/OurService.html">Our Services</a></li>
+                    <li><a href="SidePage/Doctor.html">Find a Doctor</a></li>
+                    <li><a href="https://mycw208.ecwcloud.com/portal25694/jsp/100mp/login_otp.jsp">Patient Portal</a></li>
+                    <li><a href="SidePage/MakeAppt.html">New Patient</a></li>
+                    <li><a href="SidePage/Career.html">Careers</a></li>
+                </ul>
+                
+                <div class="search-container">
+                    <input type="search" placeholder="Search">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark blue navigation -->
+    <nav class="blue-nav">
+        <h1>Primary Care</h1>
+        <ul>
+            <li><a href="SidePage/Aboutus.html">About Us</a></li>
+            <li><a href="SidePage/Location.html">Location</a></li>
+            <li><a href="SidePage/MakeAppt.html">Make an appointment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> &gt; Primary Care
+    </div>
+
+    <!-- Main content -->
+    <main>
+        <div class="content-wrapper">
+            <div class="image-content">
+                <img src="Images/HomePageImage.jpg" alt="Doctor with patient" class="hero-image">
+            </div>
+            <div class="text-content">
+                <h1>Primary Care</h1>
+                <p>Pleasant Lake Medical Center provides comprehensive primary care</p>
+                <P class="Hour">Our Office Hour: Monday - Thursday: 9 AM to 6 PM</P1>
+                
+                <div class="action-links">
+                    <a href="SidePage/MakeAppt.html" class="action-button">Make An Appointment</a>
+                    <a href="tel:(508)432-5233" class="action-button">Call Us: (508) 432-5233</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- After your main content -->
+    <section class="for-patients">
+        <h2>For Patients & Families</h2>
+        
+        <div class="services-grid">
+            <!-- First row -->
+            <a href="SidePage/Location.html" class="service-item">
+                <h3>Explore Our Location</h3>
+                <p>Pleasant Lake Medical Center provides comprehensive primary care</p>
+            </a>
+
+            <a href="SidePage/MakeAppt.html" class="service-item">
+                <h3>Make An Appointment</h3>
+                <p>Schedule an <strong>In-Person</strong> or <strong>Telehealth</strong> consultation with our providers at our clinic for comprehensive care</p>
+            </a>
+
+            <a href="https://weavebillpay.com/8a02924a" class="service-item">
+                <h3>Pay Your Bill Online</h3>
+                <p>Use our secure payment portal to settle your balance quickly and easily.</p>
+            </a>
+
+            <!-- Second row -->
+            <a href="https://mycw208.ecwcloud.com/portal25694/jsp/100mp/login_otp.jsp" class="service-item">
+                <h3>Patient Portals</h3>
+                <p>Pleasant Lake Medical Center's patient portals are online resources that help patients manage their lab results, conditions.</p>
+            </a>
+
+            <a href="SidePage/MakeAppt.html" class="service-item">
+                <h3>New Patient</h3>
+                <p>Our practice welcomes individuals and families looking for high-quality care</p>
+            </a>
+
+            <!-- Update the insurance-info section -->
+            <div class="service-item insurance-info" onclick="toggleDropdown(this)">
+                <div class="service-header">
+                    <h3>Insurance Information</h3>
+                    <button class="toggle-btn" onclick="event.stopPropagation()">+</button>
+                </div>
+                <p>We accept a wide range of insurance plans to make accessing care easier for you. If you do not see your insurance listed, please call us to check if we accept your insurance. 
+                    <a href="tel:(508) 432-5233" sstyle="text-decoration: none; color: #007bff; font-weight: 500; padding: 5px 10px; border-radius: 4px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';"tyle="text-decoration: none; color: inherit; transition: color 0.3s ease;">Phone Number: (508) 432-5233</a></p>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>Blue Cross Blue Shield</li>
+                        <li>Aetna</li>
+                        <li>Harvard Pilgrim</li>
+                        <li>United Healthcare</li>
+                        <li>Medicare</li>
+                        <li>Tufts Health Plan</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Replace the three separate sections with this structure -->
+    <div class="bottom-sections">
+        <section class="social-connect">
+            <h2>Stay Connected with Pleasant Lake Medical Center</h2>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+
+        <section class="about-primary-care">
+            <div class="about-content">
+                <h2>About Primary Care</h2>
+                <div class="underline"></div>
+                <p>Pleasank Lake Medical Center provides comprehensive primary care</p>
+                <a href="SidePage/Aboutus.html" class="learn-more">Learn more</a>
+            </div>
+        </section>
+
+    </div>
+
+    <button id="back-to-top" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Hospital Info -->
+            <div class="footer-info">
+                <img src="Images/PLMC1.png" alt="PLMC-footer-logo" class="footer-logo">
+                <div class="hospital-address">
+                    <p>Pleasant Lake Medical Center</p>
+                    <p>253 Pleasant Lake Ave</p>
+                    <p>Harwich, MA 02645</p>
+                </div>
+                <div class="footer-links">
+                    <a href="tel:(508)432-5233">Phone Number: (508) 432-5233</a>
+                    <a>Fax: 508-430-0511</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Navigation -->
+            <div class="footer-nav">
+                <div class="nav-column">
+                    <h3>Our Office Hour</h3>
+                    <p>Monday - Thursday: 9 AM to 6 PM</p>
+                    
+                    <h3><a href="SidePage/Career.html">CAREERS</a></h3>
+                    <p>Learn about career opportunities, search for positions and apply for a job.</p>
+                    
+                    <h3>NEWS & EVENTS</h3>
+                    <p>Explore events and the latest news, stay connected with Pleasank Lake Medical Center.</p>
+                    
+                </div>
+            </div>
+
+            <!-- Add Google Map -->
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.8164533042395!2d-70.0744054!3d41.7028979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89fb3f955470dcc1%3A0xeea93286a818e985!2s253%20Pleasant%20Lake%20Ave%2C%20Harwich%2C%20MA%2002645!5e0!3m2!1sen!2sus!4v1731879586948!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>Copyright © 2024. Pleasant Lake Medical Center</p>
+            <div class="bottom-links">
+                <a href="SidePage/Privacypolicy.html">Patient Rights & Advocacy</a>
+                <a href="SidePage/Privacypolicy.html">Privacy & Legal Notices</a>
+                <a href="SidePage/Privacypolicy.html">Website Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this at the end of your body tag, before closing </body> -->
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        // Toggle menu when clicking hamburger
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent click from immediately bubbling to document
+            mainNav.classList.toggle('show');
+            
+            // Toggle icon
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mainNav.contains(e.target) && !menuToggle.contains(e.target)) {
+                mainNav.classList.remove('show');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Prevent clicks inside menu from closing it
+        mainNav.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // Keep your existing insurance dropdown and back-to-top functionality
+        function toggleDropdown(element) {
+            const dropdownContent = element.querySelector('.dropdown-content');
+            const toggleBtn = element.querySelector('.toggle-btn');
+            
+            dropdownContent.classList.toggle('show');
+            toggleBtn.classList.toggle('active');
+        }
+
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 200) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Add click event to scroll to top
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Set the default language of your page
+                includedLanguages: 'en,es,fr', // List of languages you want to include
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function toggleDropdown(element) {
+            const dropdownContent = element.querySelector('.dropdown-content');
+            const toggleBtn = element.querySelector('.toggle-btn');
+            
+            dropdownContent.classList.toggle('show');
+            toggleBtn.classList.toggle('active');
+        }
+    </script>
+</body>

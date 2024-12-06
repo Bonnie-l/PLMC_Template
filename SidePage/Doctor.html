@@ -1,0 +1,419 @@
+<!--Bonnie-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website Theme5</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Doctor.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="utility-bar">
+        <div class="utility-content">
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="../index.html">
+                <img src="Image/PLMC2.png" alt="PLMC-logo" class="logo">
+            </a>
+
+            <!-- Hamburger menu for mobile -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <!-- Main navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="OurService.html">Our Services</a></li>
+                    <li><a href="Doctor.html">Find a Doctor</a></li>
+                    <li><a href="https://mycw208.ecwcloud.com/portal25694/jsp/100mp/login_otp.jsp">Patient Portal</a></li>
+                    <li><a href="MakeAppt.html">New Patient</a></li>
+                    <li><a href="Career.html">Careers</a></li>
+                </ul>
+                
+                <div class="search-container">
+                    <input type="search" placeholder="Search">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dark blue navigation -->
+    <nav class="blue-nav">
+        <h1>Primary Care</h1>
+        <ul>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="MakeAppt.html">Make an appointment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> &gt; Primary Care
+    </div>
+
+    <!--Write sth here-->
+    <div class="doctor-profile">
+        <div class="main-content">
+            <!-- Doctor Header -->
+            <div class="doctor-header">
+                <img src="Image/Dr.-Shepherd-227x300.jpg" alt="Dr.S" class="doctor-photo">
+                <div class="doctor-info">
+                    <h1>James Shepherd, MD</h1>
+                    <h2>Internal Medicine and Family Medicine</h2>
+                    <div class="action-buttons">
+                        <a href="MakeAppt.html" class="btn primary">Accepting New Patients</a>
+                        <a href="MakeAppt.html" class="btn secondary">Schedule Online</a>
+                        <a href="tel:+1234567890" class="btn call">Call Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-cards">
+                <div class="card ratings">
+                    <span class="icon">⭐</span>
+                    <div class="card-content">
+                        <div class="rating">4.9 of 5 stars</div>
+                        <div class="details">260 Ratings, 42 Reviews</div>
+                    </div>
+                </div>
+
+                <div class="card languages">
+                    <div class="card-content">
+                        <div class="title">Languages</div>
+                        <div class="details">English</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about-section">
+                <h2>About</h2>
+                <p>Dr. James W. Shepherd has nearly 20 years of experience providing exceptional care as a Family Physician at Pleasant Lake Medical Center. He joined the practice in December of 2002 after spending just over a year at a previous office as a family physician. His patients appreciate his ability to explain medical issues in a language that is easy to understand.</p>
+                
+                <div class="specialty">
+                    <h3>Specialty Interests:</h3>
+                    <p>Family Medicine, Primary Care, Internal Medicine, Chronic Disease Management</p>
+                </div>
+
+                <div class="affiliations">
+                    <h3>Profile:</h3>
+                    <p>A board-certified physician in family medicine, Dr. Shepherd was an instructor with the Department of Family and Community Medicine for the University of Massachusetts Medical School and Family Medicine Residency Program from 2001-2002. He has served as a preceptor for Boston University Medical School students from 2003 to the present. From 2006-2008, Dr. Shepherd was the chairman of the Department of Family Medicine at Cape Cod Hospital.</p>
+                </div>
+
+                <div class="insurance-dropdown service-item insurance-info" onclick="toggleDropdown(this)">
+                    <div class="service-header">
+                        <h3>Insurance Information</h3>
+                        <button class="toggle-btn" onclick="event.stopPropagation()">+</button>
+                    </div>
+                    <p>We accept a wide range of insurance plans to make accessing care easier for you. If you do not see your insurance listed, please call us to check if we accept your insurance. 
+                        <a href="tel:(508) 432-5233" style="text-decoration: none; color: #007bff; font-weight: 500; padding: 5px 10px; border-radius: 4px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">Phone Number: (508) 432-5233</a></p>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Blue Cross Blue Shield</li>
+                            <li>Aetna</li>
+                            <li>Harvard Pilgrim</li>
+                            <li>United Healthcare</li>
+                            <li>Medicare</li>
+                            <li>Tufts Health Plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Doctor -->
+    <div class="doctor-profile">
+        <div class="main-content">
+            <!-- Doctor Header -->
+            <div class="doctor-header">
+                <img src="Image/Dr.-Topolewski-220x300.jpg" alt="Dr.T" class="doctor-photo">
+                <div class="doctor-info">
+                    <h1>Carol Topolewski, MD</h1>
+                    <h2>Family Medicine</h2>
+                    <div class="action-buttons">
+                        <a href="#" class="btn primary">Accepting New Patients</a>
+                        <a href="#" class="btn secondary">Schedule Online</a>
+                        <a href="tel:+1234567890" class="btn call">Call Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-cards">
+                <div class="card ratings">
+                    <span class="icon">⭐</span>
+                    <div class="card-content">
+                        <div class="rating">4.8 of 5 stars</div>
+                        <div class="details">180 Ratings, 35 Reviews</div>
+                    </div>
+                </div>
+
+                <div class="card languages">
+                    
+                    <div class="card-content">
+                        <div class="title">Languages</div>
+                        <div class="details">English</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about-section">
+                <h2>About</h2>
+                <p>Dr. Carol A. Topolewski has cared for patients at Pleasant Lake Medical Center since she first opened the practice in 1977. With over 40 years of experience in Family Medicine, Dr. Topolewski places great importance on giving each patient the personal attention that they deserve. </p>
+                
+                <div class="specialty">
+                    <h3>Specialty Interests:</h3>
+                    <p>Family Medicine, Primary Care, Chronic Disease Management</p>
+                </div>
+
+                <div class="affiliations">
+                    <h3>Profile:</h3>
+                    <p>From 1982-2000 she was the medical director at Brewster Manor Nursing Home. For 16 years from 2000-2016 she was the medical director at EPOCH Nursing Home and starting in 2016 Dr. Topolewski became the medical director at Wingate of Brewster Nursing Home. Dr. Topolewski has been honored with the Physician’s Recognition Award three separate times during her career: 1984, 1990, and 1996. In 2003 she received the Hospital Staff Service Award from the Cape Cod Hospital Customer Service Committee.</p>
+                </div>
+
+                <div class="insurance-dropdown service-item insurance-info" onclick="toggleDropdown(this)">
+                    <div class="service-header">
+                        <h3>Insurance Information</h3>
+                        <button class="toggle-btn" onclick="event.stopPropagation()">+</button>
+                    </div>
+                    <p>We accept a wide range of insurance plans to make accessing care easier for you. If you do not see your insurance listed, please call us to check if we accept your insurance. 
+                        <a href="tel:(508) 432-5233" style="text-decoration: none; color: #007bff; font-weight: 500; padding: 5px 10px; border-radius: 4px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">Phone Number: (508) 432-5233</a></p>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Blue Cross Blue Shield</li>
+                            <li>Aetna</li>
+                        <li>Harvard Pilgrim</li>
+                        <li>United Healthcare</li>
+                        <li>Medicare</li>
+                        <li>Tufts Health Plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Doctor -->
+    <div class="doctor-profile">
+        <div class="main-content">
+            <!-- Doctor Header -->
+            <div class="doctor-header">
+                <img src="Image/Dr.-Campbell-249x300.jpg" alt="Dr.C" class="doctor-photo">
+                <div class="doctor-info">
+                    <h1>Diane Campbell, MD</h1>
+                    <h2>Family Medicine</h2>
+                    <div class="action-buttons">
+                        <a href="#" class="btn primary">Accepting New Patients</a>
+                        <a href="#" class="btn secondary">Schedule Online</a>
+                        <a href="tel:+1234567890" class="btn call">Call Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="info-cards">
+                <div class="card ratings">
+                    <span class="icon">⭐</span>
+                    <div class="card-content">
+                        <div class="rating">4.8 of 5 stars</div>
+                        <div class="details">180 Ratings, 35 Reviews</div>
+                    </div>
+                </div>
+
+                <div class="card languages">
+                    
+                    <div class="card-content">
+                        <div class="title">Languages</div>
+                        <div class="details">English</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="about-section">
+                <h2>About</h2>
+                <p>With over 30 years of experience in primary care, Dr. Diane S. Campbell truly enjoys helping people to feel and function better. Dr. Campbell is a compassionate, thorough, and dedicated family medicine physician who treats pediatric, adolescent, adult, and geriatric patients in an outpatient setting. She has more than 20 years of experience in hospital and long term care settings and is a proven provider of high quality and cost-effective care, delivered in a caring and attentive manner.</p>
+
+                <div class="specialty">
+                    <h3>Specialty Interests:</h3>
+                    <p>Family Medicine, Primary Care, Chronic Disease Management</p>
+                </div>
+
+                <div class="affiliations">
+                    <h3>Profile:</h3>
+                    <p>Dr. Campbell is warm and friendly approach to patient care makes her easy to trust. She is also very well respected by her peers, so much so that she was chosen by her colleagues to chair the Family Medicine Department at a 200+bed hospital in Maine. In July of 2008, she was elected to serve as President and Chief of the Medical Staff at Maine General Medical Center.</p>
+                </div>
+
+                <div class="insurance-dropdown service-item insurance-info" onclick="toggleDropdown(this)">
+                    <div class="service-header">
+                        <h3>Insurance Information</h3>
+                        <button class="toggle-btn" onclick="event.stopPropagation()">+</button>
+                    </div>
+                    <p>We accept a wide range of insurance plans to make accessing care easier for you. If you do not see your insurance listed, please call us to check if we accept your insurance. 
+                        <a href="tel:(508) 432-5233" style="text-decoration: none; color: #007bff; font-weight: 500; padding: 5px 10px; border-radius: 4px; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#007bff'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007bff';">Phone Number: (508) 432-5233</a></p>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Blue Cross Blue Shield</li>
+                            <li>Aetna</li>
+                            <li>Cigna</li>
+                            <li>United Healthcare</li>
+                            <li>Medicare</li>
+                            <li>MassHealth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End here-->
+            
+    <button id="back-to-top" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <!-- Hospital Info -->
+            <div class="footer-info">
+                <img src="Image/PLMC1.png" alt="PLMC-footer-logo" class="footer-logo">
+                <div class="hospital-address">
+                    <p>Pleasant Lake Medical Center</p>
+                    <p>253 Pleasant Lake Ave</p>
+                    <p>Harwich, MA 02645</p>
+                </div>
+                <div class="footer-links">
+                    <a href="tel:(508)432-5233">Phone Number: (508) 432-5233</a>
+                    <a>Fax: 508-430-0511</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Navigation -->
+            <div class="footer-nav">
+                <div class="nav-column">
+                    <h3>Our Office Hour</h3>
+                    <p>Monday - Thursday: 9 AM to 6 PM</p>
+                    
+                    <h3><a href="Career.html">CAREERS</a></h3>
+                    <p>Learn about career opportunities, search for positions and apply for a job.</p>
+                    
+                    <h3>NEWS & EVENTS</h3>
+                    <p>Explore events and the latest news, stay connected with Pleasank Lake Medical Center.</p>
+                    
+                </div>
+            </div>
+
+            <!-- Add Google Map -->
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.8164533042395!2d-70.0744054!3d41.7028979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89fb3f955470dcc1%3A0xeea93286a818e985!2s253%20Pleasant%20Lake%20Ave%2C%20Harwich%2C%20MA%2002645!5e0!3m2!1sen!2sus!4v1731879586948!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>Copyright © 2024. Pleasant Lake Medical Center</p>
+            <div class="bottom-links">
+                <a href="Privacypolicy.html">Patient Rights & Advocacy</a>
+                <a href="Privacypolicy.html">Privacy & Legal Notices</a>
+                <a href="Privacypolicy.html">Website Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this at the end of your body tag, before closing </body> -->
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        
+        // Toggle menu when clicking hamburger
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent click from immediately bubbling to document
+            mainNav.classList.toggle('show');
+            
+            // Toggle icon
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!mainNav.contains(e.target) && !menuToggle.contains(e.target)) {
+                mainNav.classList.remove('show');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Prevent clicks inside menu from closing it
+        mainNav.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 200) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Add this click handler for the back-to-top button
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', // Set the default language of your page
+                includedLanguages: 'en,es,fr', // List of languages you want to include
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script>
+        function toggleDropdown(element) {
+            const dropdownContent = element.querySelector('.dropdown-content');
+            const toggleBtn = element.querySelector('.toggle-btn');
+            
+            dropdownContent.classList.toggle('show');
+            toggleBtn.classList.toggle('active');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

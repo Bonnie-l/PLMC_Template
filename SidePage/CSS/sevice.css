@@ -1,0 +1,48 @@
+/* Services Section */
+.services-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.treatment-category {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.treatment-card {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 30px 0;
+    display: block;
+}
+
+.treatment-card h2 {
+    font-family: "Mercury Display", Georgia, serif;
+    font-size: 28px;
+    color: #0066CC;
+    margin-bottom: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.treatment-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 800px;
+}
+
+/* Remove border from last card */
+.treatment-card:last-child {
+    border-bottom: none;
+}
+.services-section h1{
+    font-size: 36px;
+    color: #2B3B56;
+}

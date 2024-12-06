@@ -1,0 +1,163 @@
+.Apply-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.Apply-section h1 {
+    color: #2b4b6b;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Form Sections */
+.form-section {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    color: #2b4b6b;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* File Upload Styling */
+.upload-group {
+    margin-bottom: 20px;
+}
+
+.file-upload {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.file-upload input[type="file"] {
+    width: 100%;
+}
+
+.file-hint {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Submit Button */
+.form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .Apply-section {
+        padding: 15px;
+    }
+}
+
+/* Optional: Add a subtle focus state */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+/* Success Message */
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
+}
+
+/* Add these styles to your existing Apply.css */
+.selected-position {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.selected-position h2 {
+    color: #2b4b6b;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.selected-position .company-name {
+    color: #666;
+    margin: 0;
+    font-size: 16px;
+}
